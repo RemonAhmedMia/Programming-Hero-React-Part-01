@@ -35,7 +35,7 @@ console.log(upperCase); // ["REMON", "HASAN", "RAFI"]
 
 
 //map() এ index ব্যবহার করা যায়==
-const songkha = [10, 20, 30];
+const songkha = [10, 20, 40];
 
 const withIndex = songkha.map((num, index) => `Index ${index}: ${num}`);
 
