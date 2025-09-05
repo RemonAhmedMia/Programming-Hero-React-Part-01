@@ -78,3 +78,30 @@ console.log(rNames); // ["Remon", "Rafi", "Rakib"]
 
 const cheap = products.filter(product => product.price <= 5000);
 console.log(cheap);
+
+const spesificName = products.filter(product => product.name.includes('w'));
+console.log(spesificName); //orthat amr ekhane w ache ki na seta find kora
+
+
+// find()?
+//filter() → সব মিল থাকা element return করে (array আকারে)।
+//find() → শুধু প্রথম মিল থাকা element return করে (single value/object)।
+//  JavaScript এর Array Method।
+// এটা array এর ভেতরে প্রথম যে element condition মেনে চলে, সেটা return করে।
+// যদি কোনো element না মিলে, তবে undefined return করে।
+
+const numb = [1, 2, 3, 4, 5];
+const firstEven = numb.find(num => num % 2 === 0);
+console.log(firstEven); // 2 এখানে প্রথম even সংখ্যা 2 return করেছে।
+
+
+const users = [
+  { id: 1, name: "Remon", age: 22 },
+  { id: 2, name: "Hasan", age: 25 },
+  { id: 3, name: "Rafi", age: 19 }
+];
+
+const user = users.find(u => u.id === 2);
+
+console.log(user); 
+// { id: 2, name: "Hasan", age: 25 }
