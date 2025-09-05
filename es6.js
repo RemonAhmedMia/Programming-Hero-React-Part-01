@@ -36,3 +36,22 @@ console.log(add(5, 3)); // 8
 
 const square = x => x * x;
 console.log(square(4)); // 16
+
+const addFiftySix = num => num + 56;
+
+// check even==========
+
+const isEven = x => x%2 == 0;
+//  Multiplae Parameteer=========
+
+const addThree = (x,y,z) => x+y+z;
+
+// multiple line==========
+
+const doMath = (num1, num2, num3) => {
+    const add = num1 + num2 + num3;
+    return add;
+};
+
+console.log(doMath(2, 3, 4)); // 9
+
