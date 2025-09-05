@@ -2,7 +2,7 @@
 
 const products =[
     {name: 'laptop', price: 32000, brand: 'lenovo' , color: 'black'},
-    {name: 'watch', price: 2000, brand: 'iPhone' , color: 'silver'},
+    {name: 'watch', price: 20000, brand: 'iPhone' , color: 'silver'},
     {name: 'book', price: 300, brand: 'humayon-ahmed' , color: 'purple'},
     {name: 'perfumes', price: 700, brand: 'denver' , color: 'blue'},
     {name: 'table', price: 2500, brand: 'lenovo' , color: 'white'},
@@ -60,3 +60,21 @@ nums.forEach(n => console.log(n * n));
 
 products.forEach(product => console.log(product));
 products.forEach(product => console.log(product.color)); //shodu color gula show korbe
+
+// **************filter():
+// JavaScript এর Array Method।
+// এটা দিয়ে তুমি একটা array এর ভেতর থেকে condition মিলে এমন element গুলো বেছে নিয়ে নতুন array বানাতে পারো।
+
+
+const number = [1, 2, 3, 4, 5, 6];
+const even = number.filter(num => num % 2 === 0);
+console.log(even); // [2, 4, 6]
+// #string Filter
+const namess = ["Remon", "Hasan", "Rafi", "Rakib"];
+
+const rNames = namess.filter(name => name.startsWith("R"));
+
+console.log(rNames); // ["Remon", "Rafi", "Rakib"]
+
+const cheap = products.filter(product => product.price <= 5000);
+console.log(cheap);
