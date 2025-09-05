@@ -41,3 +41,22 @@ const withIndex = songkha.map((num, index) => `Index ${index}: ${num}`);
 
 console.log(withIndex);
 // ["Index 0: 10", "Index 1: 20", "Index 2: 30"]
+
+
+// Difference: map() বনাম forEach()
+// map() : নতুন array return করে।
+// forEach() : কোনো কিছু return করে না (শুধু কাজ করে)।
+
+const nums = [1, 2, 3];
+
+// map()
+const squares = nums.map(n => n * n);
+console.log(squares); // [1, 4, 9]
+
+// forEach()
+nums.forEach(n => console.log(n * n));
+// Output: 1, 4, 9 (কিন্তু নতুন array তৈরি হয়নি)
+
+
+products.forEach(product => console.log(product));
+products.forEach(product => console.log(product.color)); //shodu color gula show korbe
