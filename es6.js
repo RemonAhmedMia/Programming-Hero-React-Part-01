@@ -55,3 +55,43 @@ const doMath = (num1, num2, num3) => {
 
 console.log(doMath(2, 3, 4)); // 9
 
+// Spread Operator===============
+// ... তিনটা ডট হলো Spread Operator।
+// এটা দিয়ে আমরা array বা object এর ভেতরের element গুলোকে ছড়িয়ে (expand) দিতে পারি।
+
+// 01:Array তে Spread Operator (Basic):
+
+const number = [1, 2, 3];
+console.log(...number); 
+// Output: 1 2 3
+
+// 02Array কপি করা (Clone)
+
+const arr1 = [10, 20, 30];
+const arr2 = [...arr1]; 
+
+console.log(arr2); // [10, 20, 30]
+console.log(arr1 === arr2); // false (নতুন array তৈরি হয়েছে)
+
+// 03:Array Merge করা
+
+const a = [1, 2];
+const b = [3, 4];
+const c = [...a, ...b];
+
+console.log(c); // [1, 2, 3, 4]
+
+// 04:Array এর মধ্যে নতুন element যোগ করা
+
+const nums = [2, 3, 4];
+const updated = [1, ...nums, 5];
+
+console.log(updated); // [1, 2, 3, 4, 5]
+
+// 05:Object এ Spread Operator (Basic)
+
+const person = { name: "Remon", age: 22 };
+const clone = { ...person };
+
+console.log(clone); // { name: "Remon", age: 22 }
+
